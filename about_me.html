@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Adrien Tosti | About me</title>
+	<link rel="stylesheet" href="styletest2.css">
+	<link rel="stylesheet" type="text/css" href="Fonts.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+        
+</head>
+<body>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-choices">
+            <div><a href="javascript:()" onclick="showPopup();"><p>Photography</p></a></div>
+            <div><a href="videography.html"><p>Videography</p></a></div>
+            <div><a href="clients.html"><p>Clients</p></a></div>
+            <div><a href="about_me.html"><p>Contact</p></a></div>
+        </div>
+        <a href="javascript:()" onclick="hideMobileMenu();"><img id="closemobilemenu" src="img/cross_simple.png" alt=""></a>
+    </div>
+
+	<div class="header">
+            <div class="nav">
+                <a href="index.html" class="logo"><h2 id="logo">Adrien.</h2></a>
+                <ul id="full-header">
+                    <li><a href="about_me.html">Contact</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="videography.html">Videography</a></li>
+                    <li><a href="javascript:()" onclick="showPopup();">Photography</a></li>
+                </ul>
+                <ul id="mobile-header">
+                    <li><a href="javascript:()" onclick="showMobileMenu();"><img src="img/menu.png" alt=""></a></li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="presentation">
+    	<div class="gold-bgd"></div>
+    	<div class="pres-img">
+    		<img src="img/Portraits/DSC09168-4-min.jpg">
+    		<div class="blackbgd"></div>
+    	</div>
+    	<div class="pres-description">
+    		<!-- <h4>ADRIEN</h4> -->
+    		<div class="container">
+    			<div id="item1">
+	    			<p>Freelance photographer, filmmaker, graphic designer, web designer based in Montreal, Canada.</p>
+	    		</div>
+	    		<div id="item2">
+	    			<p id="item2">From discovering music at a young age with guitar and piano lessons, I developed a passion for art over the years. Through various experiences, travelling and discovering the world also became priorities I needed to integrate into my life. Photography then became a mean for me to combine both of my passions and discover the beauties that make up the world we live in. Now I want to make you discover the world as I see it through my lenses.</p>
+	    		</div>
+	    		<div id="item3">
+	    			<p id="item3">Always on the lookout for new opportunities, don't hesitate to contact me via e-mail at <a href="mailto:adrien.tosti@icloud.com" target="_top" style="text-decoration: underline;">adrien.tosti@icloud.com</a>, or by filling the form below.</p>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
+
+	
+<div class="about-me">
+	<div class="gold-bgd-alt"></div>
+	<div id="contact-me">   
+	    <form action="contactform.php" method="post">
+	      <div class="elem-group">
+	        <label for="name">Name</label>
+	        <input type="text" id="name" name="visitor_name"  pattern=[A-Z\sa-z]{3,20} required>
+	      </div>
+	      <div class="elem-group">
+	        <label for="email">E-mail</label>
+	        <input type="email" id="email" name="visitor_email" required>
+	      </div>
+	      <div class="elem-group">
+	        <label for="title">Subject</label>
+	        <input type="text" id="title" name="email_title" required pattern={3,60}>
+	      </div>
+	      <div class="elem-group">
+	        <label for="message">Write your message</label>
+	        <textarea id="message" name="visitor_message" required></textarea>
+	        <button id="send" type="submit">Send Message</button>
+	      </div>
+	    </form>
+	</div> 
+</div>
+
+
+
+	<div class="bottomsect">
+        <footer>
+            <div id="social-media-toggles">
+                    <div class="social-media-link" id="fb"></div>
+                    <div class="social-media-link" id="insta"></div>
+                    <div class="social-media-link" id="vimeo"></div>
+                    <div class="social-media-link" id="mail"></div>
+            </div>
+            <p>Copyright @ 2020 Adrien Tosti</p>
+        </footer>
+    </div>
+	
+
+
+
+	<div class="popup-photo" id="popup">
+		<div class="blanket">
+			<div class="choices">
+				<p><a href="portraits.html">Portraits</a></p>
+				<p><a href="landscapes.html">Landscapes</a></p>
+				<p><a href="street.html">Street</a></p>
+			</div>
+		</div>
+		<div class="close-popup">
+			<button class="close" onclick="hidePopup();">Close</button>
+		</div>
+	</div>
+
+	<script src="script.js" type="text/javascript"></script>
+
+	
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Adrien Tosti | Clients</title>
+	<link rel="stylesheet" href="styletest2.css">
+	<link rel="stylesheet" type="text/css" href="Fonts.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-choices">
+            <div><a href="javascript:()" onclick="showPopup();"><p>Photographie</p></a></div>
+            <div><a href="videography-fr.html"><p>Videographie</p></a></div>
+            <div><a href="clients-fr.html"><p>Clients</p></a></div>
+            <div><a href="about-me-fr.html"><p>Contact</p></a></div>
+        </div>
+        <a href="javascript:()" onclick="hideMobileMenu();"><img id="closemobilemenu" src="img/cross_simple.png" alt=""></a>
+    </div>
+
+	<div class="header">
+            <div class="nav">
+                <a href="index.html" class="logo"><h2 id="logo">Adrien.</h2></a>
+                <ul id="full-header">
+                    <li><a href="about-me-fr.html">Contact</a></li>
+                    <li><a href="clients-fr.html">Clients</a></li>
+                    <li><a href="videography-fr.html">Videographie</a></li>
+                    <li><a href="javascript:()" onclick="showPopup();">Photographie</a></li>
+                </ul>
+                <ul id="mobile-header">
+                    <li><a href="javascript:()" onclick="showMobileMenu();"><img src="img/menu.png" alt=""></a></li>
+                </ul>
+            </div>
+    </div>
+
+<div class="clients-container" id="client-container">
+
+    <div class="clientwork">
+        <div class="flex-container">
+            <h2><a id="client-choice1">Tout</a></h2>
+            <h2>|</h2>
+            <h2><a id="client-choice2">Videograpie</a></h2>
+            <h2>|</h2>
+            <h2><a id="client-choice3">Photograpie</a></h2>
+            <h2>|</h2>
+            <h2><a id="client-choice4">Design Web</a></h2>
+            <h2>|</h2>
+            <h2><a id="client-choice5">Design Graphique</a></h2>
+        </div>
+    </div>
+
+    <div class="newclient videography" id="redbull">
+        <div class="blackhover"></div>
+        <div class="explore">
+            <a  class="explorebutton" id="exploreredbull" onclick="showRedBull();"><p>voir plus</p></a>
+        </div>
+        <div class="background">
+        </div>
+    </div>
+
+    <div class="newclient graphicdesign" id="ontop">
+        <div class="blackhover"></div>
+        <div class="explore">
+            <a  class="explorebutton" onclick="showOnTop();"><p>voir plus</p></a>
+        </div>
+        <div class="background">
+        </div>
+    </div>
+
+    <div class="newclient webdesign" id="toiture">
+        <div class="blackhover"></div>
+        <div class="explore">
+            <a  class="explorebutton" onclick="showToiture();"><p>voir plus</p></a>
+        </div>
+        <div class="background">
+        </div>
+    </div>
+
+    <div class="newclient webdesign" id="jmcc">
+        <div class="blackhover"></div>
+        <div class="explore">
+            <a  class="explorebutton" onclick="showJMCC();"><p>voir plus</p></a>
+        </div>
+        <div class="background">
+        </div>
+    </div>
+
+    <div class="newclient videography" id="lexya">
+        <div class="blackhover"></div>
+        <div class="explore">
+            <a  class="explorebutton" onclick="showLexya();"><p>voir plus</p></a>
+        </div>
+        <div class="background">
+        </div>
+    </div>
+
+    <div class="newclient photography" id="gala">
+        <div class="blackhover"></div>
+        <div class="explore">
+            <a  class="explorebutton" onclick="showgala();"><p>voir plus</p></a>
+        </div>
+        <div class="background">
+        </div>
+    </div>
+
+    <div class="newclient videography" id="emerge">
+        <div class="blackhover"></div>
+        <div class="explore">
+            <a  class="explorebutton" onclick="showemerge();"><p>voir plus</p></a>
+        </div>
+        <div class="background">
+        </div>
+    </div>
+
+     <div class="newclient photography" id="pureprep">
+        <div class="blackhover"></div>
+        <div class="explore">
+            <a  class="explorebutton" onclick="showpureprep();"><p>voir plus</p></a>
+        </div>
+        <div class="background">
+        </div>
+    </div>
+
+    <div class="newclient videography graphicdesign" id="lacasse">
+        <div class="blackhover"></div>
+        <div class="explore">
+            <a  class="explorebutton" onclick="showlacasse();"><p>voir plus</p></a>
+        </div>
+        <div class="background">
+        </div>
+    </div>
+</div>
+    
+    <div class="overlay" id="overlayredbull">
+        <div class="content">
+            <img class="close" id="popup-client-close1" onclick="hideRedBull();" src="img/cross_simple.png">
+            <div class="popup-client-titles">
+                <h2>RedBull</h2>
+                <h4>Videographie</h4>
+            </div>
+
+            <div class="popup-client-video" id="closeredbull">
+                <iframe src="https://player.vimeo.com/video/392020969" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlayontop">
+        <div class="content">
+            <img class="close" id="popup-client-close2" onclick="hideOnTop();" src="img/cross_simple.png">
+            <div class="popup-client-titles">
+                <h2>On Top</h2>
+                <h4>Design Graphique</h4>
+            </div>
+            <div class="popup-client-graphic">
+                <img src="http://adrientosti.com/Clients/OnTop/1.png">
+                <img src="http://adrientosti.com/Clients/OnTop/3.png">
+                <img src="http://adrientosti.com/Clients/OnTop/4.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlayJMCC">
+        <div class="content">
+            <img class="close" id="popup-client-close2" onclick="hideJMCC();" src="img/cross_simple.png">
+            <div class="popup-client-titles">
+                <h2>JMCC</h2>
+                <h4>Design Web</h4>
+            </div>
+            <div class="popup-client-web">
+                <img src="http://adrientosti.com/Clients/JMCC/Homepage.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlayToiture">
+        <div class="content">
+            <img class="close" id="popup-client-close2" onclick="hideToiture();" src="img/cross_simple.png">
+            <div class="popup-client-titles">
+                <h2>Toiture Fleur-de-Lys Inc.</h2>
+                <h4>Design Web</h4>
+            </div>
+            <div class="popup-client-web">
+                <img src="http://adrientosti.com/Clients/Toiture/Accueil3.png">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="overlay" id="overlaylexya">
+        <div class="content">
+            <img class="close" id="popup-client-close3" onclick="hideLexya();" src="img/cross_simple.png">
+            <div class="popup-client-titles">
+                <h2>Lexya</h2>
+                <h4>Videographie</h4>
+            </div>
+
+            <div class="popup-client-video" id="closelexya">
+                <iframe src="https://player.vimeo.com/video/360855308" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overlay" id="overlaygala">
+        <div class="content">
+            <img class="close" id="popup-client-close3" onclick="hidegala();" src="img/cross_simple.png">
+            <div class="popup-client-titles">
+                <h2>Gala de la Relève en Communication</h2>
+                <h4>Photographie</h4>
+            </div>
+
+            <div class="popup-client-photo">
+                <div class="left">
+                    <img src="http://adrientosti.com/Clients/GalaReleve/DSC05354-min.jpg">
+                    <img src="http://adrientosti.com/Clients/GalaReleve/DSC05367-min.jpg">
+                    <img src="http://adrientosti.com/Clients/GalaReleve/DSC05377-min.jpg">
+                    <img src="http://adrientosti.com/Clients/GalaReleve/DSC06239-min.jpg">
+                </div>
+                <div class="right">
+                    <img src="http://adrientosti.com/Clients/GalaReleve/DSC06237-min.jpg">
+                    <img src="http://adrientosti.com/Clients/GalaReleve/DSC05806-min.jpg">
+                    <img src="http://adrientosti.com/Clients/GalaReleve/DSC06042-min.jpg">
+                    <img src="http://adrientosti.com/Clients/GalaReleve/DSC05717-min.jpg">
+                </div>
+                <div class="popup-client-photo-mobile">
+                    <img src="http://adrientosti.com/Clients/GalaReleve/DSC05354-min.jpg">
+                    <img src="http://adrientosti.com/Clients/GalaReleve/DSC05367-min.jpg">
+                    <img src="http://adrientosti.com/Clients/GalaReleve/DSC05377-min.jpg">
+                    <img src="http://adrientosti.com/Clients/GalaReleve/DSC06239-min.jpg">
+                    <img src="http://adrientosti.com/Clients/GalaReleve/DSC06237-min.jpg">
+                    <img src="http://adrientosti.com/Clients/GalaReleve/DSC05806-min.jpg">
+                    <img src="http://adrientosti.com/Clients/GalaReleve/DSC06042-min.jpg">
+                    <img src="http://adrientosti.com/Clients/GalaReleve/DSC05717-min.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlayemerge">
+        <div class="content">
+            <img class="close" id="popup-client-close3" onclick="hideemerge();" src="img/cross_simple.png">
+            <div class="popup-client-titles">
+                <h2>Emerge</h2>
+                <h4>Videographie</h4>
+            </div>
+
+            <div class="popup-client-video" id="closeemerge">
+                <iframe src="https://player.vimeo.com/video/358330716" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlaypureprep">
+        <div class="content">
+            <img class="close" id="popup-client-close3" onclick="hidepureprep();" src="img/cross_simple.png">
+            <div class="popup-client-titles">
+                <h2>Pureprep</h2>
+                <h4>Photography</h4>
+            </div>
+
+            <div class="popup-client-photo">
+                <div class="left">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02355-min.jpg">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02232-min.jpg">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02649-min.jpg">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02297-min.jpg">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02199-min.jpg">
+                </div>
+                <div class="right">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02346-min.jpg">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02560-min.jpg">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02270-min.jpg">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02645-min.jpg">
+                </div>
+                <div class="popup-client-photo-mobile">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02355-min.jpg">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02232-min.jpg">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02649-min.jpg">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02297-min.jpg">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02199-min.jpg">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02346-min.jpg">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02560-min.jpg">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02270-min.jpg">
+                    <img src="http://adrientosti.com/Clients/Pureprep/DSC02645-min.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlaylacasse">
+        <div class="content">
+            <img class="close" id="popup-client-close3" onclick="hidelacasse    ();" src="img/cross_simple.png">
+            <div class="popup-client-titles">
+                <h2>Lacasse Machinerie Inc.</h2>
+                <h4>Videographie</h4>
+            </div>
+
+            <div class="popup-client-video" id="closelacasse">
+                <iframe src="https://player.vimeo.com/video/364824191" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            <div class="popup-client-titles">
+                <h4>Design Graphique</h4>
+            </div>
+            <div class="popup-client-graphic">
+                <img src="http://adrientosti.com/Clients/Lacasse/1.png">
+                <img src="http://adrientosti.com/Clients/Lacasse/2.png">
+                <img src="http://adrientosti.com/Clients/Lacasse/3.png">
+                <img src="http://adrientosti.com/Clients/Lacasse/4.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="bottomsect">
+        <footer>
+            <div id="social-media-toggles">
+                    <a href="https://www.facebook.com/Adrien-Tosti-357433308154636/" target="_blank"><div class="social-media-link" id="fb" ></div></a>
+                    <a href="https://www.instagram.com/adrientosti/" target="_blank"><div class="social-media-link" id="insta"></div></a>
+                    <a href="https://www.vimeo.com/user99243988" target="_blank"><div class="social-media-link" id="vimeo"></div></a>
+                    <a href="mailto:adrien.tosti@icloud.com" target="_top"><div class="social-media-link" id="mail"></div></a>
+            </div>
+            <p>Copyright @ 2020 Adrien Tosti</p>
+        </footer>
+    </div>
+    
+
+
+
+    <div class="popup-photo" id="popup">
+        <div class="blanket">
+            <div class="choices">
+                <p><a href="portraits.html">Portraits</a></p>
+                <p><a href="landscapes.html">Paysages</a></p>
+                <p><a href="street.html">Urbain</a></p>
+            </div>
+        </div>
+        <div class="close-popup">
+            <button class="close" onclick="hidePopup();">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+
+    
+
+<script>
+
+    $(document).ready(function() {
+        $("#client-choice1").click(function() {
+            $("#client-choice1").css("color", "#000");
+            $("#client-choice2").css("color", "#818181");
+            $("#client-choice3").css("color", "#818181");
+            $("#client-choice4").css("color", "#818181");
+            $("#client-choice5").css("color", "#818181");
+            $(".photography").show();
+            $(".webdesign").show();
+            $(".graphicdesign").show();
+            $(".videography").show();
+        });
+    });
+
+    $(document).ready(function() {
+        $("#client-choice2").click(function() {
+            $("#client-choice2").css("color", "#000");
+            $("#client-choice1").css("color", "#818181");
+            $("#client-choice3").css("color", "#818181");
+            $("#client-choice4").css("color", "#818181");
+            $("#client-choice5").css("color", "#818181");
+            $(".photography").hide();
+            $(".webdesign").hide();
+            $(".graphicdesign").hide();
+            $(".videography").show();
+        });
+    });
+
+    $(document).ready(function() {
+        $("#client-choice3").click(function() {
+            $("#client-choice3").css("color", "#000");
+            $("#client-choice2").css("color", "#818181");
+            $("#client-choice1").css("color", "#818181");
+            $("#client-choice4").css("color", "#818181");
+            $("#client-choice5").css("color", "#818181");
+            $(".photography").show();
+            $(".webdesign").hide();
+            $(".graphicdesign").hide();
+            $(".videography").hide();
+        });
+    });
+
+    $(document).ready(function() {
+        $("#client-choice4").click(function() {
+            $("#client-choice4").css("color", "#000");
+            $("#client-choice2").css("color", "#818181");
+            $("#client-choice1").css("color", "#818181");
+            $("#client-choice3").css("color", "#818181");
+            $("#client-choice5").css("color", "#818181");
+            $(".photography").hide();
+            $(".webdesign").show();
+            $(".graphicdesign").hide();
+            $(".videography").hide();
+        });
+    });
+
+    $(document).ready(function() {
+        $("#client-choice5").click(function() {
+            $("#client-choice5").css("color", "#000");
+            $("#client-choice2").css("color", "#818181");
+            $("#client-choice1").css("color", "#818181");
+            $("#client-choice3").css("color", "#818181");
+            $("#client-choice4").css("color", "#818181");
+            $(".photography").hide();
+            $(".webdesign").hide();
+            $(".graphicdesign").show();
+            $(".videography").hide();
+            $("#lacasse").show();
+        });
+    });
+
+</script>
+
+</body>
+</html>

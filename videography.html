@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Adrien Tosti | Videography</title>
+	<link rel="stylesheet" href="styletest2.css">
+	<link rel="stylesheet" type="text/css" href="Fonts.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-choices">
+            <div><a href="javascript:()" onclick="showPopup();"><p>Photography</p></a></div>
+            <div><a href="videography.html"><p>Videography</p></a></div>
+            <div><a href="clients.html"><p>Clients</p></a></div>
+            <div><a href="about_me.html"><p>Contact</p></a></div>
+        </div>
+        <a href="javascript:()" onclick="hideMobileMenu();"><img id="closemobilemenu" src="img/cross_simple.png" alt=""></a>
+    </div>
+
+	<div class="header">
+            <div class="nav">
+                <a href="index.html" class="logo"><h2 id="logo">Adrien.</h2></a>
+                <ul id="full-header">
+                    <li><a href="about_me.html">Contact</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="videography.html">Videography</a></li>
+                    <li><a href="javascript:()" onclick="showPopup();">Photography</a></li>
+                </ul>
+                <ul id="mobile-header">
+                    <li><a href="javascript:()" onclick="showMobileMenu();"><img src="img/menu.png" alt=""></a></li>
+                </ul>
+            </div>
+    </div>
+    
+    <div class="vid-sect">
+            <div class="vid-box" id="magique-bck">
+               <span></span>
+               <div class="titles-play">
+                    <h2 class="vid-titles">Magique</h2>
+                    <a href="javascript:()" onclick="showVidMagique();"><img src="img/Videography/play-button.png" alt=""></a>
+                </div>
+            </div>
+            <div class="vid-box" id="BLM-bck">
+               <span></span>
+               <div class="titles-play">
+                    <h2 class="vid-titles">Black Lives Matter</h2>
+                  <img src="img/Videography/play-button.png" alt="" onclick="showVidBLM()">
+                </div>
+            </div>
+        
+            <div class="vid-box" id="sugarshack-bck">
+               <span></span>
+               <div class="titles-play">
+                    <h2 class="vid-titles">Covid Sugar Shack</h2>
+                    <a onclick="showVidCovid()"><img src="img/Videography/play-button.png" alt=""></a>
+                </div>
+            </div>
+            <div class="vid-box" id="CYMI-bck">
+               <span></span>
+               <div class="titles-play">
+                    <h2 class="vid-titles">RedBull Can You Make It?</h2>
+                    <a onclick="showVidCYMI()"><img src="img/Videography/play-button.png" alt=""></a>
+                </div>
+            </div>
+            <div class="vid-box" id="emerge-bck">
+               <span></span>
+               <div class="titles-play">
+                    <h2 class="vid-titles">Emerge Consulting</h2>
+                    <a onclick="showVidEmerge()"><img src="img/Videography/play-button.png" alt=""></a>
+                </div>
+            </div>
+            <div class="vid-box" id="lexya-bck">
+               <span></span>
+               <div class="titles-play">
+                    <h2 class="vid-titles">Lexya Gives You Wings</h2>
+                    <a onclick="showVidLexya()"><img src="img/Videography/play-button.png" alt=""></a>
+                </div>
+            </div>
+            <div class="vid-box" id="JMMA-bck">
+               <span></span>
+               <div class="titles-play">
+                    <h2 class="vid-titles" id="jmmatitle">JMMA Creative Director Application</h2>
+                    <a onclick="showVidJMMA()"><img src="img/Videography/play-button.png" alt=""></a>
+                </div>
+            </div>
+            <div class="vid-box" id="remorque-bck">
+               <span></span>
+               <div class="titles-play">
+                    <h2 class="vid-titles">Remorque Agricole</h2>
+                    <a onclick="showVidRemorque()"><img src="img/Videography/play-button.png" alt=""></a>
+                </div>
+            </div>
+            <div class="vid-box" id="move-bck">
+               <span></span>
+               <div class="titles-play">
+                    <h2 class="vid-titles">Move Your Feet!</h2>
+                    <a onclick="showVidMove()"><img src="img/Videography/play-button.png" alt=""></a>
+                </div>
+            </div>
+            <div class="vid-box" id="porto-bck">
+               <span></span>
+               <div class="titles-play">
+                    <h2 class="vid-titles">Porto Tasting</h2>
+                    <a onclick="showVidPorto()"><img src="img/Videography/play-button.png" alt=""></a>
+                </div>
+            </div>
+            <div class="vid-box" id="JMCC-bck">
+               <span></span>
+               <div class="titles-play">
+                    <h2 class="vid-titles">JMCC Photoshoot BTS</h2>
+                    <a onclick="showVidJMCC()"><img src="img/Videography/play-button.png" alt=""></a>
+                </div>
+            </div>
+            <div class="vid-box" id="prolevel-bck">
+               <span></span>
+               <div class="titles-play">
+                    <h2 class="vid-titles">Lacasse Machinerie Pro-Level 20</h2>
+                    <a onclick="showVidProlevel()"><img src="img/Videography/play-button.png" alt=""></a>
+                </div>
+            </div>
+    </div>
+    
+    <div class="video-overlay" id="vidmagique">
+        <div class="content">
+            <img class="close" id="popup-client-close1" onclick="hideVidMagique();" src="img/cross_simple.png">
+            <div class="popup-videography-video" id="closemagique">
+                <iframe src="https://player.vimeo.com/video/439334592" title="false" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <div class="video-overlay" id="vidBLM">
+        <div class="content">
+            <img class="close" id="popup-client-close1" onclick="hideVidBLM();" src="img/cross_simple.png">
+            <div class="popup-videography-video" id="closeBLM">
+               <iframe src="https://player.vimeo.com/video/427263771" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <div class="video-overlay" id="vidCovid">
+        <div class="content">
+            <img class="close" id="popup-client-close1" onclick="hideVidCovid();" src="img/cross_simple.png">
+            <div class="popup-videography-video" id="closecovid">
+              <iframe src="https://player.vimeo.com/video/404579790" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <div class="video-overlay" id="vidCYMI">
+        <div class="content">
+            <img class="close" id="popup-client-close1" onclick="hideVidCYMI();" src="img/cross_simple.png">
+            <div class="popup-videography-video" id="closeCYMI">
+              <iframe src="https://player.vimeo.com/video/392020969" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <div class="video-overlay" id="vidEmerge">
+        <div class="content">
+            <img class="close" id="popup-client-close1" onclick="hideVidEmerge();" src="img/cross_simple.png">
+            <div class="popup-videography-video" id="closeEmerge">
+              <iframe src="https://player.vimeo.com/video/358330716" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <div class="video-overlay" id="vidLexya">
+        <div class="content">
+            <img class="close" id="popup-client-close1" onclick="hideVidLexya();" src="img/cross_simple.png">
+            <div class="popup-videography-video" id="closeLexya">
+              <iframe src="https://player.vimeo.com/video/360855308" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <div class="video-overlay" id="vidJMMA">
+        <div class="content">
+            <img class="close" id="popup-client-close1" onclick="hideVidJMMA();" src="img/cross_simple.png">
+            <div class="popup-videography-video" id="closeJMMA">
+              <iframe src="https://player.vimeo.com/video/398085607" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <div class="video-overlay" id="vidRemorque">
+        <div class="content">
+            <img class="close" id="popup-client-close1" onclick="hideVidRemorque();" src="img/cross_simple.png">
+            <div class="popup-videography-video" id="closeRemorque">
+              <iframe src="https://player.vimeo.com/video/417827194" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <div class="video-overlay" id="vidMove">
+        <div class="content">
+            <img class="close" id="popup-client-close1" onclick="hideVidMove();" src="img/cross_simple.png">
+            <div class="popup-videography-video" id="closeMove">
+              <iframe src="https://player.vimeo.com/video/340776058" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+           
+    <div class="video-overlay" id="vidPorto">
+        <div class="content">
+            <img class="close" id="popup-client-close1" onclick="hideVidPorto();" src="img/cross_simple.png">
+            <div class="popup-videography-video" id="closePorto">
+              <iframe src="https://player.vimeo.com/video/339861508" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+           
+    <div class="video-overlay" id="vidJMCC">
+        <div class="content">
+            <img class="close" id="popup-client-close1" onclick="hideVidJMCC();" src="img/cross_simple.png">
+            <div class="popup-videography-video" id="closeJMCC">
+              <iframe src="https://player.vimeo.com/video/369613784" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+           
+    <div class="video-overlay" id="vidProlevel">
+        <div class="content">
+            <img class="close" id="popup-client-close1" onclick="hideVidProlevel();" src="img/cross_simple.png">
+            <div class="popup-videography-video" id="closeProlevel">
+              <iframe src="https://player.vimeo.com/video/364824191" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>                     
+            
+    
+	 
+
+    <div class="bottomsect">
+        <footer>
+            <div id="social-media-toggles">
+                    <a href="https://www.facebook.com/Adrien-Tosti-357433308154636/" target="_blank"><div class="social-media-link" id="fb" ></div></a>
+                    <a href="https://www.instagram.com/adrientosti/" target="_blank"><div class="social-media-link" id="insta"></div></a>
+                    <a href="https://www.vimeo.com/user99243988" target="_blank"><div class="social-media-link" id="vimeo"></div></a>
+                    <a href="mailto:adrien.tosti@icloud.com" target="_top"><div class="social-media-link" id="mail"></div></a>
+            </div>
+            <p>Copyright @ 2020 Adrien Tosti</p>
+        </footer>
+    </div>
+
+    
+	
+
+
+
+	<div class="popup-photo" id="popup">
+        <div class="blanket">
+            <div class="choices">
+                <p><a href="portraits.html">Portraits</a></p>
+                <p><a href="landscapes.html">Landscapes</a></p>
+                <p><a href="street.html">Street</a></p>
+            </div>
+        </div>
+        <div class="close-popup">
+            <button class="close" onclick="hidePopup();">Close</button>
+        </div>
+    </div>
+
+	<script src="script.js" type="text/javascript"></script>
+
+	
+
+</body>
+</html>

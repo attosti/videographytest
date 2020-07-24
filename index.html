@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:image" content="http://adrientosti.com/thumbnails/tn_IMG_3049.jpg"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="adrientosti.com" />
+    <meta property="og:title" content="Adrien Tosti" />
+    <meta property="og:description" content="Photographer | Filmmaker | Web Designer | Graphic Designer" />
+	<title>Adrien Tosti</title>
+	<link rel="stylesheet" href="styletest2.css">
+	<link rel="stylesheet" type="text/css" href="Fonts.css">
+	
+
+</head>
+<body>
+	<div class="choice" id="choice">
+		<div class="choices">
+			<p><a href="index-fr.html">francais</a></p>
+			<p><a id="choiceen" onclick="hideChoice();">english</a></p>
+		</div>
+	</div>
+	<div class="scrollsect" id="landing">
+		<div class="landing">
+			<div class="title">
+				<h1>Adrien.</h1>
+				<div class="flex-container">
+					<h2>photographer</h2>
+					<h2 class="barre">|</h2>
+					<h2>videographer</h2>
+					<h2 class="barre">|</h2>
+					<h2>graphic designer</h2>
+					<h2 class="barre">|</h2>
+					<h2>web developper</h2>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="mobile-menu" id="mobile-menu">
+		<div class="mobile-menu-choices">
+			<div><a href="javascript:()" onclick="showPopup();"><p>Photography</p></a></div>
+			<div><a href="videography.html"><p>Videography</p></a></div>
+			<div><a href="clients.html"><p>Clients</p></a></div>
+			<div><a href="about_me.html"><p>Contact</p></a></div>
+		</div>
+		<a href="javascript:()" onclick="hideMobileMenu();"><img id="closemobilemenu" src="img/cross_simple.png" alt=""></a>
+	</div>
+	
+	
+
+	<div class="about">
+		<div class="header">
+			<div class="nav">
+				<a href="#" class="logo"><h2 id="logo">Adrien.</h2></a>
+				<ul id="full-header">
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#clients">Clients</a></li>
+					<li><a href="#videography">Videography</a></li>
+					<li><a href="#photography">Photography</a></li>
+				</ul>
+				<ul id="mobile-header">
+					<li><a href="javascript:()" onclick="showMobileMenu();"><img src="img/menu.png" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="about">
+			<div class="services">
+
+				<div class="scrollsect">
+					<div id="photography" class="snapholder"></div>
+				
+					<div class="section">
+						<div class="first-bg"></div>
+						<div class="pictures">
+							<div class="blackrect"></div>
+							<img src="img/Homepage-pictures/DSC07954-min.jpg">
+						</div>
+						<div class="text">
+							<h4>Photography</h4>
+							<p>A picture is a fraction of time that will never happen again.</p>
+							<p><a href="javascript:()" onclick="showPopup();">Discover</a></p>
+						</div>
+						
+					</div>
+				</div>
+
+				<div class="scrollsect">
+					<div id="videography" class="snapholder"></div>
+				
+				<div class="section section-alt">
+					<div class="second-bg"></div>
+					<div class="pictures-alt">
+						<div class="blackrect"></div>
+						<img src="img/Homepage-pictures/DSC04402-min.jpg">
+					</div>
+					<div class="text-alt">
+						<h4>Videography</h4>
+						<p>A video is for me the most powerful vehicle to share a message with your audience.</p>
+						<p><a href="videography.html">Discover</a></p>
+					</div>
+					
+				</div>
+				</div>
+
+				<div class="scrollsect">
+					<div id="clients" class="snapholder"></div>
+				<div class="section">
+					<div class="third-bg"></div>
+					<div class="pictures">
+						<div class="blackrect"></div>
+						<img src="img/Homepage-pictures/DSC03019-min.jpg">
+					</div>
+					<div class="text">
+						<h4>Clients</h4>
+						<p>Let's take your business to the next level by creating stunning pictures, videos, or web designs!</p>
+						<p><a href="clients.html">Discover</a></p>
+					</div>
+					
+				</div>
+				</div>
+				
+				<div class="scrollsect">
+					<div id="contact" class="snapholder"></div>
+					<div class="section section-alt">
+						<div class="fourth-bg"></div>
+						<div class="pictures-alt">
+							<div class="blackrect"></div>
+							<img src="img/Homepage-pictures/IMG_1210-min.jpg">
+						</div>
+						<div class="text-alt">
+							<h4>About me</h4>
+							<p>Photography has become a way to express my creativity. Videography allowed me to take my creative process further. Web design is what makes it come full circle.</p>
+							<p><a href="about_me.html">Discover</a></p>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+		<div class="scrollsect">
+			<div class="bottomsect">
+				<footer>
+					<p><a href="#photography">Back to top</a></p>
+					<div id="social-media-toggles-home">
+	                    <div class="social-media-link" id="fb"></div>
+	                    <div class="social-media-link" id="insta"></div>
+	                    <div class="social-media-link" id="vimeo"></div>
+	                    <div class="social-media-link" id="mail"></div>
+            		</div>
+					<p>Copyright @ 2020 Adrien Tosti</p>
+				</footer>
+			</div>
+		</div>
+	
+
+	<div class="popup-photo" id="popup">
+		<div class="blanket">
+			<div class="choices">
+				<p><a href="portraits.html">Portraits</a></p>
+				<p><a href="landscapes.html">Landscapes</a></p>
+				<p><a href="street.html">Street</a></p>
+			</div>
+		</div>
+		<div class="close-popup">
+			<button class="close" onclick="hidePopup();">Close</button>
+		</div>
+	</div>
+
+	<script src="script.js" type="text/javascript"></script>
+
+	
+</body>
+</html>

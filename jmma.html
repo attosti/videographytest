@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adrien Tosti | Videography</title>
+  <link rel="stylesheet" href="styletest2.css">
+  <link rel="stylesheet" type="text/css" href="Fonts.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+//      $(document).scroll(function () {
+//     var y = $(this).scrollTop();
+//     if (y > 200) {
+//         $('#myBtn').fadeIn();
+//     } else {
+//         $('#myBtn').fadeOut();
+//     }
+// });
+
+      $(document).ready(function() {
+    // This will fire when document is ready:
+    $(window).resize(function() {
+        // This will fire each time the window is resized:
+        if($(window).width() >= 1200) {
+            // if larger or equal
+            
+                            $(document).scroll(function () {
+                    var y = $(this).scrollTop();
+                    if (y > 200) {
+                        $('#social-media-toggles').fadeIn();
+                    } else {
+                        $('#social-media-toggles').fadeOut();
+
+                    }
+                });     
+            
+        } else {
+            // if smaller
+            $('#social-media-toggles').style.display("none");
+        }
+    }).resize(); // This will simulate a resize to trigger the initial run.
+});     
+
+
+
+    </script>
+</head>
+<body>
+  <div class="header">
+    <div class="nav">
+      <a href="#" class="logo"><h2 id="logo">Adrien.</h2></a>
+      <ul>
+        <li><a href="about_me.html">About me</a></li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="#">Videography</a></li>
+        <li><a href="javascript:()" onclick="showPopup();">Photography</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="social-media-toggles">
+                <ul>
+                    <li><a href="https://www.facebook.com/Adrien-Tosti-357433308154636/" target="_blank"><img src="img/Socialmediatoggles/facebook-2.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/adrientosti/" target="_blank"><img src="img/Socialmediatoggles/instagram-2.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.vimeo.com/user99243988" target="_blank"><img src="img/Socialmediatoggles/youtube-2.png"></a></li>
+                    <li><a href="mailto:adrien.tosti@icloud.com" target="_top"><img src="img/Socialmediatoggles/telegram-2.png"></a></li>
+                </ul>
+    </div>
+
+   <div class="video-container">
+
+    <div class="videobox">
+            <div class="video">
+                    <h2 class="video-title">Client Work</h2>
+                    
+
+</body>
+</html>

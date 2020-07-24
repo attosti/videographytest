@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Adrien Tosti | Portraits</title>
+	<link rel="stylesheet" href="styletest2.css">
+	<link rel="stylesheet" type="text/css" href="Fonts.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div class="mobile-menu" id="mobile-menu">
+		<div class="mobile-menu-choices">
+			<div><a href="javascript:()" onclick="showPopup();"><p>Photography</p></a></div>
+			<div><a href="videography.html"><p>Videography</p></a></div>
+			<div><a href="clients.html"><p>Clients</p></a></div>
+			<div><a href="about_me.html"><p>Contact</p></a></div>
+		</div>
+		<a href="javascript:()" onclick="hideMobileMenu();"><img id="closemobilemenu" src="img/cross_simple.png" alt=""></a>
+	</div>
+	
+	<div class="header">
+            <div class="nav">
+                <a href="index.html" class="logo"><h2 id="logo">Adrien.</h2></a>
+                <ul id="full-header">
+                    <li><a href="about_me.html">Contact</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="videography.html">Videography</a></li>
+                    <li><a href="javascript:()" onclick="showPopup();">Photography</a></li>
+                </ul>
+                <ul id="mobile-header">
+                    <li><a href="javascript:()" onclick="showMobileMenu();"><img src="img/menu.png" alt=""></a></li>
+                </ul>
+            </div>
+    </div>
+	<div class="photo-background">
+		<div class="gallery row">
+	        <div class="column left">
+	            <img src="http://adrientosti.com/img/Portraits/DSC08839-min.jpg" class="portraits">
+	            <img src="http://adrientosti.com/img/Portraits/DSC07499-min.jpg" class="portraits">
+	            <img src="http://adrientosti.com/img/Portraits/DSC05955-min.JPG" class="portraits">
+	            <img src="http://adrientosti.com/img/Portraits/DSC02678-2-min.jpg" class="portraits">
+	            <img src="http://adrientosti.com/img/Portraits/DSC07325-min.jpg" class="portraits">
+	            <img src="http://adrientosti.com/img/Portraits/IMG_0001-3.jpg" class="portraits">
+	            <img src="http://adrientosti.com/img/Portraits/DSC00384-2-min.jpg" class="portraits">
+	            <img src="http://adrientosti.com/img/Portraits/DSC03634-min.jpg" class="portraits">
+	        </div>
+	        <div class="column middle">
+	            <p></p>
+	        </div>
+	        <div class="column right">
+	            <img src="http://adrientosti.com/img/Portraits/DSC03399-2-min.jpg" class="portraits">
+	            <img src="http://adrientosti.com/img/Portraits/DSC03191-8-min.jpg" class="portraits">
+	            <img src="http://adrientosti.com/img/Portraits/DSC04558-min.jpg" class="portraits">
+	            <img src="http://adrientosti.com/img/Portraits/DSC02681-2-min.jpg" class="portraits">
+	            <img src="http://adrientosti.com/img/Portraits/IMG_1881-mod-min.jpg" class="portraits">
+	            <img src="http://adrientosti.com/img/Portraits/DSC04544-2-min.jpg" class="portraits">
+	            <img src="http://adrientosti.com/img/Portraits/DSC02103-min.jpg" class="portraits">
+	            <img src="http://adrientosti.com/img/Portraits/DSC01680-min.jpg" class="portraits">
+	        </div>
+	    </div>
+	</div>
+
+    <div class="bottomsect">
+		<footer>
+            <div id="social-media-toggles">
+                    <div class="social-media-link" id="fb"></div>
+                    <div class="social-media-link" id="insta"></div>
+                    <div class="social-media-link" id="vimeo"></div>
+                    <div class="social-media-link" id="mail"></div>
+            </div>
+			<p>Copyright @ 2020 Adrien Tosti</p>
+		</footer>
+	</div>
+	
+
+
+
+	<div class="popup-photo" id="popup">
+		<div class="blanket">
+			<div class="choices">
+				<p><a href="portraits.html">Portraits</a></p>
+				<p><a href="landscapes.html">Landscapes</a></p>
+				<p><a href="street.html">Street</a></p>
+			</div>
+		</div>
+		<div class="close-popup">
+			<button class="close" onclick="hidePopup();">Close</button>
+		</div>
+	</div>
+
+	<script src="script.js" type="text/javascript"></script>
+
+	
+
+</body>
+</html>

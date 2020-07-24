@@ -1,0 +1,81 @@
+@font-face {
+        font-family: bellovia;
+        src: url(Fonts/The_Bellovia_Sans.ttf);  /* ^^^*/
+
+    }
+
+
+
+@font-face {
+    font-family: Quicksand;
+    src: url(Fonts/Quicksand_Book.otf);
+
+}
+    
+@font-face {
+    font-family: flosans;
+    src: url(Fonts/Florsn01.ttf);
+
+}
+    
+
+
+    
+@font-face {
+    font-family: telegraphico;
+    src: url(Fonts/telegrafico.ttf);
+
+}
+    
+@font-face {
+    font-family: marketfresh;
+    src: url(Fonts/MarketFreshALLCAPS.ttf);
+
+}
+       
+    
+@font-face {
+    font-family: headoh;
+    src: url(Fonts/HEADOH__.TTF); /* ^^^^^*/
+
+}
+   
+    
+@font-face {
+    font-family: oldsansblack;
+    src: url(Fonts/OldSansBlack.ttf);
+}
+
+@font-face {
+    font-family: geosanslight;
+    src: url(Fonts/GeosansLight.ttf);
+
+}
+
+@font-face {
+    font-family: thelightfont;
+    src: url(Fonts/TheLightFont.otf);
+
+}
+
+@font-face {
+    font-family: MeganJune;
+    src: url(Megan June.otf);
+
+}
+
+@font-face {
+    font-family: champagnelimo;
+    src: url(Fonts/Champagne_&_Limousines_Bold.ttf);
+
+}
+
+@font-face {
+    font-family: MADECanvasBlack;
+    src: url(Fonts/MADE_Canvas_Black.otf);
+}
+
+@font-face {
+    font-family: Adam;
+    src: url(Fonts/Adam.otf);
+}
